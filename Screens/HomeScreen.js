@@ -9,6 +9,8 @@ import { Ionicons, MaterialCommunityIcons } from "@expo/vector-icons";
 import Notification from "../Component/Notification";
 
 export default function HomeScreen({ navigation }) {
+  //changes in home screen
+
   return (
     <View style={styles.container}>
       <View
