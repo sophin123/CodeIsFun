@@ -8,7 +8,7 @@ import { Icons } from "react-native-vector-icons/Ionicons";
 import { Ionicons, MaterialCommunityIcons } from "@expo/vector-icons";
 import Notification from "../Component/Notification";
 
-export default function HomeScreen() {
+export default function HomeScreen({ navigation }) {
   return (
     <View style={styles.container}>
       <View
@@ -24,11 +24,13 @@ export default function HomeScreen() {
           name="md-menu-outline"
           size={34}
           color={`rgba(255,255,255,0.8)`}
+          onPress={() => console.log("Menu")}
         />
         <MaterialCommunityIcons
           name="account"
           size={34}
           color={`rgba(255,255,255,0.8)`}
+          onPress={() => console.log("clicked")}
         />
       </View>
       <Notification />
